@@ -1,10 +1,10 @@
-import { NextResponse } from 'next/server';
+// Web標準の Response を使うため、NextResponse のインポートを削除します
 
-// Cloudflare Workers(Edge)で動作させるために必須の設定
 export const runtime = 'edge';
 
 export async function GET() {
-  return NextResponse.json({
+  // Web標準の Response.json() を使用
+  return Response.json({
     message: 'Hello from Cloudflare Workers!',
     timestamp: new Date().toISOString(),
   });
