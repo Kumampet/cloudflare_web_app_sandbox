@@ -2,7 +2,7 @@
     "$schema": "node_modules/wrangler/config-schema.json",
     "name": "cloudflare-web-app-sandbox",
     "main": ".open-next/worker.js",
-    "compatibility_date": "2024-11-01",
+    "compatibility_date": "2026-07-16",
     "compatibility_flags": [
         "nodejs_compat"
     ],
